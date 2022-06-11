@@ -1,14 +1,12 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _abs - return abs value
- * @n : number to check
- * Return:0 or 1
+ * _abs - function that prints the absolute value of a number
+ * @n: takes in an integer
+ * Return: 1 if > 0, 0 if == 0, positive if negative
  */
-
 int _abs(int n)
 {
-
-return (n >= 0 ? n : n * -1);
-
+	if (n < 0)
+		return (n * -1);
+	return (n);
 }
